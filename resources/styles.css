@@ -1,0 +1,262 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 0;   
+}
+
+body {
+    margin: 0;
+}
+
+/* Header Styles */
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 68, 107);
+}
+
+nav h2 {
+    color: darkgray;
+    margin-left: 2rem;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 3rem;
+    color: lightgray
+}
+
+@media only screen and (max-width: 425px) {
+    nav h2 {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    nav ul li {
+        margin-right: 2rem;
+    }
+}
+
+/* Banner Styles */
+
+.banner {
+    background-image: url(./banner.avif);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content {
+    background-color: white;
+    height: 15%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .banner .content {
+        width: 65%;
+        height: 30%;
+    }
+    
+    .banner h1 {
+        font-size: 3rem;
+    }
+}
+
+/* About Us Styles */
+
+.about {
+    display: flex;
+    flex-flow: column;
+    border-top: 5px solid black;
+}
+
+.about .content {
+    background-color: rgb(31, 68, 107);
+    color: lightgray;
+    margin: 0;
+    height: 3rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.about .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.about img {
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about h2 {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+
+    .about .content {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Event Styles */
+
+.event {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.event .content {
+    background-color: rgb(31, 68, 107);
+    color: lightgray;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+.event h2 {
+    text-align: center;
+}
+
+.event .container {
+    display: flex;
+    flex-flow: row;
+}
+
+.event figure {
+    width: 45%;
+}
+
+.event img {
+    width: 100%;
+    height: 800px;
+}
+
+.event figcaption {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .event img {
+        width: 100%;
+        height: 390px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .event .container {
+        flex-flow: column;
+    }
+
+    .event figure {
+        width: 80%;
+    }
+
+    .event img {
+        height: auto;
+    }
+}
+
+/* Sponsor Styles */
+
+.sponsor {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.sponsor .content {
+    background-color: rgb(31, 68, 107);
+    color: lightgray;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+.sponsor h2 {
+    text-align: center;
+}
+
+.sponsor .container {
+    display: flex;
+    flex-flow: row;
+}
+
+.sponsor figure {
+    width: 30%;
+}
+
+.sponsor img {
+    width: 100%;
+}
+
+.sponsor figcaption {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 425px) {
+     .sponsor .container {
+        flex-flow: column;
+     }
+
+     .sponsor figure {
+        width: 80%;
+     }
+}
+
+/* Footer Styles */
+
+footer {
+    background-color:rgb(31, 68, 107);
+    padding-right: 3rem;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p {
+    text-align: right;
+    margin: 0;
+    color: lightgray;
+}
